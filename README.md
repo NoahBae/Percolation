@@ -34,7 +34,7 @@ public class PercolationStats {
 }
 ```
 
-Tests: 
+## Tests: 
 ```
 % java PercolationStats 200 100
 mean                    = 0.5929934999999997
