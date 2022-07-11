@@ -19,14 +19,7 @@ public class Percolation {
 
 ## Percolation Stats:
 
-Model: To estimate the percolation threshold, consider the following computational experiment:
-
-Initialize all sites to be blocked.
-Repeat the following until the system percolates:
-Choose a site (row i, column j) uniformly at random among all blocked sites.
-Open the site (row i, column j).
-The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold.
-For example, if sites are opened in a 20-by-20 lattice, then our estimate of the percolation threshold is 204/400 = 0.51 because the system percolates when the 204th site is opened.
+To determine an approximate percolation threshold, a model for a system that has all sites initially blocked is initialized. The percolation threshold determination is approximated by determining, uniformly at random among all blocked sites, a site that will be opened (corresponding parameters to PercolationStats API is shown below - row i, column j) and the fractions of sites that are opened. The method described above will provide an estimationg of the ppercolation threshold. 
 
 ## API:
 ```
@@ -40,8 +33,6 @@ public class PercolationStats {
    public static void main(String[] args)    // test client (described below)
 }
 ```
-
-To determine an approximate percolation threshold, a model for a system that has all sites initially blocked is initialized. The percolation threshold determination is approximated by determining, uniformly at random among all blocked sites, a site that will be opened (corresponding parameters to PercolationStats API is shown below - row i, column j) and the fractions of sites that are opened. The method described above will provide an estimationg of the ppercolation threshold.  
 
 Tests: 
 ```
