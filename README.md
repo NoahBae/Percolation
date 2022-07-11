@@ -1,4 +1,5 @@
-Percolation: A percolation system of N-by-N dimensions for a grid of sites is modelled within the java classes of the repository. Each site is either open or blocked and a full site is an open site that can be conntected to an open site in the top row through a chain of connecting open sites that are left, right, or below the said open site. A system only percolates if there is a full site in the bottom row; and most importantly, if all there is a series of full sites that lead from the top row to the bottom row. This system can be equates to a porous surface that is allowing for the passage of water via open sites. 
+**Percolation: ****A percolation system of N-by-N dimensions for a grid of sites is modelled within the java classes of the repository. Each site is either open or blocked and a full site is an open site that can be conntected to an open site in the top row through a chain of connecting open sites that are left, right, or below the said open site. A system only percolates if there is a full site in the bottom row; and most importantly, if all there is a series of full sites that lead from the top row to the bottom row. This system can be equates to a porous surface that is allowing for the passage of water via open sites. **__
+
 
 API:
 public class Percolation {
@@ -11,7 +12,9 @@ public class Percolation {
    public static void main(String[] args)  // test client (optional)
 }
 
-Percolation Stats: To determine an approximate percolation threshol, a model for a system that has all sites initially blocked is initialized. The percolation threshold determination is approximated by determining, uniformly at random among all blocked sites, a site that will be opened (corresponding parameters to PercolationStats API is shown below - row i, column j) and the fractions of sites that are opened. The method described above will provide an estimationg of the ppercolation threshold.  
+
+**Percolation Stats: To determine an approximate percolation threshol, a model for a system that has all sites initially blocked is initialized. The percolation threshold determination is approximated by determining, uniformly at random among all blocked sites, a site that will be opened (corresponding parameters to PercolationStats API is shown below - row i, column j) and the fractions of sites that are opened. The method described above will provide an estimationg of the ppercolation threshold.  **
+
 
 API:
 public class PercolationStats {
